@@ -22,7 +22,3 @@ class ActivateUser(UserViewSet):
             'uid': self.kwargs['uid'],
             'token': self.kwargs['token']}
         return serializer_class(*args, **kwargs)
-
-
-'''filters = {"mark__ltetyyygtygtg": "one"}
-library = Library.objects.filter(**filters)'''
