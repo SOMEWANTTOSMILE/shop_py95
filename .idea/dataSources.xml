@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/rest_shop_2</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="shop_py95@localhost" uuid="c6880be7-967c-42ea-89e2-9a49f1afcbe3">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/shop_py95</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
