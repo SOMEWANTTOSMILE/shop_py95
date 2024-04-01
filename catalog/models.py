@@ -145,6 +145,3 @@ class Comment_image(models.Model):
 
     def __str__(self):
         return f'image for {self.comment}'
-
-
-
