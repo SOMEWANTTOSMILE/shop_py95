@@ -24,7 +24,7 @@ class Seller(models.Model):
 
 class Discount(models.Model):
     name = models.CharField(max_length=255)
-    percent = models.FloatField()
+    percent = models.PositiveIntegerField()
     exp_date = models.DateField()
 
     def __str__(self):
@@ -48,7 +48,7 @@ class Product(models.Model):
 class Cart(models.Model):
     prod_id = models.ForeignKey(Product, on_delete=models.CASCADE)
     user_id = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    count = models.PositiveBigIntegerField(default=0)
+    count = models.PositiveBigIntegerField(blank=True, null=True)
 
 
 class Promocode(models.Model):
@@ -127,7 +127,7 @@ class Order(models.Model):
 class OrderProducts(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    count = models.IntegerField()
+    count = models.IntegerField(null=True, blank=True)
 
 
 class Comment(models.Model):
