@@ -1,0 +1,11 @@
+[
+{
+    "model": "catalog.discount",
+    "pk": 1,
+    "fields": {
+        "name": "для смуты",
+        "percent": 10,
+        "exp_date": "2024-04-25"
+    }
+}
+]
