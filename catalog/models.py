@@ -53,8 +53,10 @@ class Cart(models.Model):
 
 class Promocode(models.Model):
     name = models.CharField(max_length=255)
+    percent = models.PositiveIntegerField
     is_cimilative = models.BooleanField(default=False)
-    exp_data = models.DateField()
+    date_start = models.DateField()
+    date_end = models.DateField()
 
     def __str__(self):
         return self.name
@@ -101,7 +103,7 @@ class Order(models.Model):
         ('in cash', 'in cash'),
     )
 
-    is_notif_reqired = (
+    is_notif_required = (
         ('within in 1 hour', 'within in 1 hour'),
         ('within in 6 hour', 'within in 3 hour'),
         ('within in 24 hour', 'within in 24 hour'),
@@ -117,7 +119,7 @@ class Order(models.Model):
     payment_status = models.CharField(max_length=255, choices=payment_status_choice, blank=False, default='not paid')
     payment_method = models.CharField(max_length=255, choices=payment_method_choice, blank=False)
     delivery_address = models.CharField(max_length=255)
-    is_notif_required = models.CharField(max_length=255, choices=is_notif_reqired, blank=False,
+    is_notif_required = models.CharField(max_length=255, choices=is_notif_required, blank=False,
                                          default='within in 1 hour')
 
     def __str__(self):
