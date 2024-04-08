@@ -1,0 +1,16 @@
+[
+{
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+        "price": "100.00",
+        "name": "Смута",
+        "category": 1,
+        "description": "Смута лучшая игра ever",
+        "seller": 1,
+        "count_on_stock": 1000,
+        "article": "eklfi95u298jrergir",
+        "discount": 1
+    }
+}
+]

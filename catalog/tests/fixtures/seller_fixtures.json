@@ -1,0 +1,20 @@
+[
+{
+    "model": "catalog.seller",
+    "pk": 1,
+    "fields": {
+        "name": "Смутная Компани",
+        "description": "Сделали смуту",
+        "contact": "+35834952034"
+    }
+},
+{
+    "model": "catalog.seller",
+    "pk": 2,
+    "fields": {
+        "name": "Cd project red",
+        "description": "сделали ведьмакка",
+        "contact": "+24425234"
+    }
+}
+]

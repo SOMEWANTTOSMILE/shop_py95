@@ -38,6 +38,12 @@ class SellerProductView(APIView):
         return Response(serializer.data)
 
 
+class DiscountListView(ListAPIView):
+    queryset = Discount.objects.all()
+    serializer_class = DiscountSerializer
+    permission_classes = (AllowAny,)
+
+
 class DiscountProductView(APIView):
     permission_classes = (AllowAny,)
 

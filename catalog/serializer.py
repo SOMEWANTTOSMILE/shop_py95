@@ -29,13 +29,13 @@ class SellerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Seller
-        fields = ('id', 'name', 'description')
+        fields = ('id', 'name', 'contact')
 
 
 class DiscountSerializer(serializers.ModelSerializer):
     class Meta:
         model = Discount
-        fields = ('id', 'name' )
+        fields = ('id', 'name', 'percent')
 
 
 class AddProductSerializer(serializers.Serializer):
